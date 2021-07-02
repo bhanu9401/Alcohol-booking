@@ -1,0 +1,20 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="projcard-container" *ngFor="let order of order">		
+	<div class="projcard projcard-blue">
+		<div class="projcard-innerbox">
+			<div class="projcard-textbox">
+				<div class="projcard-title">
+					User: {{order.name}}
+				</div>
+				<div class="projcard-subtitle">Type: {{order.type}}</div>
+                <div class="projcard-subtitle">Price: {{order.price}}</div>
+				<div class="projcard-subtitle">Bar Name: {{order.bname}}</div>
+				<div class="projcard-bar"></div>
+			</div>
+			<img [src]="logo" class='projcard-img'>
+			<button class="btn btn-danger" id="delbutton" style="font-size:24px" (click)="delete(order.uid,order.bname,order.type)"><i class="fa fa-trash-o"></i></button>
+		</div>
+	</div>
+</div>
+<h2	> Total Price:{{total}}</h2>

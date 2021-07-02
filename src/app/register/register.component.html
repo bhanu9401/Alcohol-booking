@@ -1,0 +1,22 @@
+<br>
+<br>
+<main class="form-signin">    
+      <h1 class="w">SIGN UP</h1>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="name">
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" [(ngModel)]="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="Phone Number" [(ngModel)]="phNo">
+        <label for="floatingPhoneNumber">PhoneNumber</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" id="subbut" type="submit" (click)="Register()">Sign up</button>
+  </main>
