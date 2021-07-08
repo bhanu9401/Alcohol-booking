@@ -1,0 +1,66 @@
+<html>
+  <body class="body">
+<main class="form-signin"> 
+    <h1 class="w retro">ADD BARS</h1>
+    <hr>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Restaurent Name" [(ngModel)]="resname">
+      <label for="floatingInput">Bar   Name</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="beer">
+        <label class="form-check-label" >
+          BEER
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="beer" class="from-control" placeholder="Price" [(ngModel)]="bprice">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="vodka">
+        <label class="form-check-label" >
+          VODKA
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="vodka" class="from-control" placeholder="Price" [(ngModel)]="vprice">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="wine">
+        <label class="form-check-label" >
+          WINE
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="wine" class="from-control" placeholder="Price" [(ngModel)]="wprice">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="whiskey">
+        <label class="form-check-label" >
+          WHISKEY
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="whiskey" class="from-control" placeholder="Price" [(ngModel)]="whprice">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="rum">
+        <label class="form-check-label" >
+          RUM
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="rum" class="from-control" placeholder="Price" [(ngModel)]="rprice">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="brandy">
+        <label class="form-check-label" >
+          BRANDY
+        </label>
+        <br>
+        <input type="number" min="0" *ngIf="brandy" class="from-control" placeholder="Price" [(ngModel)]="brprice">
+      </div>
+      <div class="form-floating">
+        <textarea cols="40" rows="5" [(ngModel)]="about" placeholder="About" maxlength="154"></textarea>
+      </div>
+      <input type="file" (change)="addEvent($event)">
+      <hr>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="Add()">ADD</button>
+</main>
+</body>
+</html>

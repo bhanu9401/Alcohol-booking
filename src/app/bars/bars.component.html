@@ -1,0 +1,22 @@
+<h1 class="retro">BARS AVAILABLE FOR {{type | uppercase}}</h1>
+<div class="projcard-container" *ngFor="let bar of bars;let i=index">		
+	<div class="projcard projcard-blue">
+		<div class="projcard-innerbox">
+			<img class="projcard-img" src={{bar.url}}  />
+			<div class="projcard-textbox">
+				<div class="projcard-title">{{bar.name}}</div>
+				<div class="projcard-subtitle">ABOUT</div>
+				<div class="projcard-bar"></div>
+				<div class="projcard-description">
+                   {{bar.about}}
+                </div>
+				<div class="slidecontainer">
+					<h6>{{bar.slider}}</h6>
+					<input type="range" min="1" max="10" value="1" class="slider" [(ngModel)]="bar.slider">
+				</div>
+				<h6> Total Price : {{bar.slider*bar.price | currency:'INR':'symbol-narrow'}} </h6>
+                <button class="btn btn-primary" (click)="placeOrder(bar.name,bar.slider)">Place Order</button>
+			</div>
+		</div>
+	</div>
+</div>

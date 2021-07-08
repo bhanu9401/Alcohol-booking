@@ -1,0 +1,50 @@
+.body{
+  height: 100vh;
+  background: url('https://cdn.wallpapersafari.com/15/32/YilcKb.jpg') no-repeat center;
+  background-size: 100% 100%;
+  background-position: top center;
+}
+.retro {
+color: #000000;
+ background-color: grey;
+text-shadow:
+  2px 2px 0 #333333,
+  4px 4px 0 #868686;
+  border-radius: 20px;
+}
+h1{
+font-weight: bold;
+text-transform: uppercase;
+}
+.w{
+    text-align: center;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin-left: 15%;
+  }
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-check-label{
+  color: black;
+}

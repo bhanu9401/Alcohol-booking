@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "olorder-f8a5f": {
+      "hosting": {
+        "Auth": [
+          "olorder-f8a5f"
+        ]
+      }
+    }
+  }
+}

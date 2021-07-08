@@ -1,0 +1,52 @@
+.body{
+  height: 100vh;
+  background: url('https://c4.wallpaperflare.com/wallpaper/997/503/724/bar-alcohol-drinks-wallpaper-preview.jpg') no-repeat center;
+  background-size: 100% 100%;
+  background-position: top center;
+}
+.retro {
+	color: #000000;
+   background-color: grey;
+	text-shadow:
+		2px 2px 0 #333333,
+		4px 4px 0 #868686;
+    border-radius: 20px;
+}
+h1{
+  font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.w{
+    text-align: center;
+}
+.form-signin {
+  margin: auto;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#subbut {
+  margin-top: 10px;
+}
